@@ -1,9 +1,9 @@
 README.md:
-	echo "# My Workbench Project " > README.md
+	echo "# My Unix Workbench Project " > README.md
 	#d=date
 	#dd= $(d)
 	echo  "make was run: "  >> README.md
-	date   >> README.md
+	date | cut -f 2 -d " "  >> README.md
 	echo >> README.md
 	echo  "The file guessinggame.sh contains "  >> README.md
 	###########################

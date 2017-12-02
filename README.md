@@ -1,7 +1,7 @@
-# My Workbench Project 
+# My Unix Workbench Project 
 make was run: 
-la 2.12.2017 07.06.16 +0200
+2.12.2017
 
 The file guessinggame.sh contains 
-31
+33
 lines
