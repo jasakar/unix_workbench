@@ -1,5 +1,5 @@
 README.md:
-	echo "# My Unix Workbench Project " > README.md
+	echo "## My Unix Workbench Project " > README.md
 	#d=date
 	#dd= $(d)
 	echo  "make was run: "  >> README.md
