@@ -6,8 +6,9 @@ function give_number {
 	read n
 	echo "Your guees is $n"
 }
-# count is number of fles in this dictory
-count=$(ls -A | wc -l)
+# count is number of files in this dictory
+# ls -pa | grep -v /  will list all files (also hidden files) but not directories
+count=$(ls -pa | grep -v / | wc -l)
 # echo "Number of files: $count"
 
 # call function 
@@ -30,4 +31,3 @@ echo
 echo "Well done my friend!"
 echo "Number of files in this directory is indeed: $count"
 echo
-

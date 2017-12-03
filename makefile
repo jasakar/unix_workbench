@@ -3,7 +3,7 @@ README.md:
 	#d=date
 	#dd= $(d)
 	echo  "make was run: "  >> README.md
-	date | cut -f 2 -d " "  >> README.md
+	date -R | cut -f 1,2,3,4 -d " "  >> README.md
 	echo >> README.md
 	echo  "The file guessinggame.sh contains "  >> README.md
 	###########################
@@ -16,5 +16,4 @@ README.md:
 	##########################
 	#cat guessinggame.sh | wc -l   >> jj_makefile_example_jj.txt
 	wc -l guessinggame.sh | cut -f 1 -d " "   >> README.md
- 	
-	echo  "lines"  >> README.md
+	echo "lines" >> README.md	
